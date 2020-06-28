@@ -186,19 +186,22 @@ else if(document.getElementById("image3").checked == true){
 	}
 	
 	//dom3 
-	function agregar(){
-	       var contador;
-		  
-          for (contador = 4; contador <= 10; contador++){
-		    
-		  }
-		   var elemento=document.createElement("li");
-			var texto=document.createTextNode("Opcion "+contador); 
-			 elemento.appendChild(texto); 
-			var lista=document.getElementById("lista"); 
+	<script type="text/javascript">
+		var i=4;
+		function agregar()
+		{
+		
+			
+			var elemento=document.createElement("li");
+			var texto=document.createTextNode("Opcion "+i);
+			elemento.appendChild(texto);
+			var lista=document.getElementById("lista");
 			lista.appendChild(elemento);
-		 
+			i=i+1;
+			return i;
+		
 		}
+	</script>
 		
 	//dom5
 	function setBorderWidth(ancho){
