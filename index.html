@@ -80,11 +80,11 @@ background-color:#FFE4B5;
 <!-- Ejercicio DOM3 -->
 <h1>Ejercicios de clase</h1>
 <h2>Ejecicio DOM 3</h2>
-<section id="contenedor" >
-		<ul id="lista" >
-				<li>Opción 1</li>
-				<li>Opción 2</li>
-				<li>Opción 3</li>
+<section id="contenedor">
+		<ul id="lista">
+			<li>Opcion1</li>
+			<li>Opcion2</li>
+			<li>Opcion3</li>
 		</ul>
 		<button type="button" onclick="agregar();">Agregar Elemento</button>
 	</section>
@@ -186,12 +186,9 @@ else if(document.getElementById("image3").checked == true){
 	}
 	
 	//dom3 
-	<script type="text/javascript">
 		var i=4;
 		function agregar()
 		{
-		
-			
 			var elemento=document.createElement("li");
 			var texto=document.createTextNode("Opcion "+i);
 			elemento.appendChild(texto);
@@ -199,10 +196,7 @@ else if(document.getElementById("image3").checked == true){
 			lista.appendChild(elemento);
 			i=i+1;
 			return i;
-		
 		}
-	</script>
-		
 	//dom5
 	function setBorderWidth(ancho){
 			document.getElementById("imagen").style.borderWidth=ancho+"px"; 
